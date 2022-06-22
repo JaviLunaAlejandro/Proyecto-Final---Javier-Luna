@@ -1,0 +1,45 @@
+$colors: (
+    uno: rgb(31, 105, 161),
+    dos: black,
+    tres: white,
+    cuatro: gray,
+    cinco:#066de36b,
+);
+$decoration: (
+    sin: none,
+    centrado: center,
+    linea: inline-block,
+    largo: auto,
+    bordes: solid 2px,
+);
+header{
+    background-color: map-get($colors , dos );
+    nav{
+        background-color: map-get($colors , uno );
+    }
+}
+main{
+    background-color: map-get($colors, cinco );
+}
+a{
+    text-decoration: map-get($decoration, sin );
+    color: map-get($colors , dos );
+}
+section{
+    border: map-get($decoration, bordes );
+     width: map-get($decoration, largo );
+}
+footer{
+    background-color: map-get($colors, dos );
+    color: map-get($colors, tres);
+    width: map-get($decoration, largo );
+    ul{
+        list-style: map-get($decoration, sin );
+        li{
+            a{
+                text-decoration: map-get($decoration, sin );
+                color: map-get($colors, tres );
+            }
+        }
+    }
+}

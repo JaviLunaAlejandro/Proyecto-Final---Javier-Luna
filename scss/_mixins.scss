@@ -1,0 +1,12 @@
+@mixin bg-drop {
+    background-color: #066de3;
+}
+@mixin ul-bor {
+    border: solid 1px white;
+}
+.dropmod{
+    @include bg-drop();
+}
+footer ul{
+    @include ul-bor();
+}
