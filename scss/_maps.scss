@@ -20,6 +20,7 @@ header{
 }
 main{
     background-color: map-get($colors, cinco );
+    text-align: map-get($decoration, centrado );
 }
 a{
     text-decoration: map-get($decoration, sin );
@@ -42,4 +43,8 @@ footer{
             }
         }
     }
+}
+
+h3{
+    text-align: map-get($decoration, centrado );
 }
